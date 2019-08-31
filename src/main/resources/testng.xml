@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Royal Alliances Test Automation Test Suite">
+
+	 <listeners>
+		<listener class-name="com.ra.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+
+	<test name="Royal Alliances Test Cases">
+		<classes>
+			<class name="com.ra.qa.testcases.LoginPageTest"></class>
+		</classes>
+	</test>
+</suite>

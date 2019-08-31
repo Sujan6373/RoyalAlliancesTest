@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Royal Alliances Test Automation Test Suite]">
+  <listeners>
+    <listener class-name="com.ra.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Royal Alliances Test Cases(failed)">
+    <classes>
+      <class name="com.ra.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="setup"/>
+          <include name="validateLoginPageTitleTest"/>
+        </methods>
+      </class> <!-- com.ra.qa.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- Royal Alliances Test Cases(failed) -->
+</suite> <!-- Failed suite [Royal Alliances Test Automation Test Suite] -->

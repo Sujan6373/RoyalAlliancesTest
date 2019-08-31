@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Royal Alliances Test Automation Test Suite" duration-ms="23914" started-at="2019-08-31T13:56:44 CDT" finished-at="2019-08-31T13:57:08 CDT">
+    <groups>
+    </groups>
+    <test name="Royal Alliances Test Cases" duration-ms="23914" started-at="2019-08-31T13:56:44 CDT" finished-at="2019-08-31T13:57:08 CDT">
+      <class name="com.ra.qa.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.ra.qa.testcases.LoginPageTest@72b6cbcc]" name="setup" is-config="true" duration-ms="11406" started-at="2019-08-31T13:56:44 CDT" finished-at="2019-08-31T13:56:55 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateLoginPageTitleTest()[pri:1, instance:com.ra.qa.testcases.LoginPageTest@72b6cbcc]" name="validateLoginPageTitleTest" duration-ms="21" started-at="2019-08-31T13:56:55 CDT" finished-at="2019-08-31T13:56:55 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ra.qa.testcases.LoginPageTest@72b6cbcc]" name="tearDown" is-config="true" duration-ms="655" started-at="2019-08-31T13:56:55 CDT" finished-at="2019-08-31T13:56:56 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.ra.qa.testcases.LoginPageTest@72b6cbcc]" name="setup" is-config="true" duration-ms="10341" started-at="2019-08-31T13:56:56 CDT" finished-at="2019-08-31T13:57:06 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginTest()[pri:2, instance:com.ra.qa.testcases.LoginPageTest@72b6cbcc]" name="loginTest" duration-ms="796" started-at="2019-08-31T13:57:06 CDT" finished-at="2019-08-31T13:57:07 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ra.qa.testcases.LoginPageTest@72b6cbcc]" name="tearDown" is-config="true" duration-ms="658" started-at="2019-08-31T13:57:07 CDT" finished-at="2019-08-31T13:57:08 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ra.qa.testcases.LoginPageTest -->
+    </test> <!-- Royal Alliances Test Cases -->
+  </suite> <!-- Royal Alliances Test Automation Test Suite -->
+</testng-results>
