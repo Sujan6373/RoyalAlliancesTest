@@ -1,8 +1,6 @@
 package com.ra.qa.testcases;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.ra.qa.base.TestBase;
@@ -17,33 +15,47 @@ public class LoginPageTest extends TestBase
 	public LoginPageTest()
 	{
 		super();
-	}
-	
-	@BeforeMethod
-	public void setup()
-	{
-		initialization();
-		loginPage = new LoginPage();
+		
 	}
 	
 	@Test(priority = 1)
+	public void setup()
+	{
+		initialization();	
+		loginPage = new LoginPage(driver);
+	}
+	
+	@Test(priority = 2)
 	public void validateLoginPageTitleTest()
 	{
 		String title = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, "Royal Alliances | Mailing Services | Irving, TX");
 	}
 	
-	@Test (priority = 2)
-	public void loginTest()
+	@Test (priority = 3)
+	public void loginTest() throws InterruptedException
 	{
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
-	
-	@AfterMethod
-	public void tearDown()
+	@Test (priority = 4)
+	public void navigateToMailQueueTest() throws InterruptedException 
 	{
-		driver.quit();
+		loginPage.navigateToMailQueue(prop.getProperty("url_mailqueue"));
 	}
+	
+	@Test (priority = 5)
+	public void selectSiteBTest() throws InterruptedException
+	{
+		loginPage.selectSiteB();
+	}
+	
+	
+	@Test (priority = 1000)
+	public void tearDown() 
+	{
+		driver.close(); 
+	}
+	 
 
 }

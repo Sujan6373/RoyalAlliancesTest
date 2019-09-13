@@ -2,13 +2,24 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Royal Alliances Test Automation Test Suite">
 
-	 <listeners>
-		<listener class-name="com.ra.ExtentReportListener.ExtentReporterNG" />
+	<listeners>
+		<listener
+			class-name="com.ra.ExtentReportListener.ExtentReporterNG" />
 	</listeners>
 
 	<test name="Royal Alliances Test Cases">
 		<classes>
 			<class name="com.ra.qa.testcases.LoginPageTest"></class>
+			<!-- <methods>
+				<include name="loginTest" />
+			</methods> -->
+			
+			<class name="com.ra.qa.testcases.HomePageTest"></class>
+			<class name="com.ra.qa.testcases.LoginPageTest"></class>  
+			<class name="com.ra.qa.testcases.HubLoginPageTest"></class>
+			
+			<class name="com.ra.qa.testcases.HomePageTest"></class>
+			
 		</classes>
 	</test>
 </suite>

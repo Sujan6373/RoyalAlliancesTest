@@ -1,5 +1,7 @@
 package com.ra.qa.pages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -17,8 +19,18 @@ public class LoginPage extends TestBase
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement submitbtn;
 	
-	public LoginPage()
+	@FindBy(xpath = "//a[contains(text(), 'Site Location ')]")
+	WebElement siteSelector;
+	
+	@FindBy(xpath = "//label[contains(text(), 'Site A - RA136')]")
+	WebElement siteA;
+	
+	@FindBy(xpath = "//label[contains(text(), 'Site - C')]")
+	WebElement siteC;
+	
+	public LoginPage(WebDriver d)
 	{
+		this.driver = d;
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -27,16 +39,35 @@ public class LoginPage extends TestBase
 		return driver.getTitle();
 	}
 	
-	public HomePage login(String uname, String pwd)
+	public HomePage login(String uname, String pwd) throws InterruptedException
 	{
 		username.sendKeys(uname);
+		Thread.sleep(1000);
+		
 		password.sendKeys(pwd);
+		Thread.sleep(1000);
+		
 		submitbtn.click();
-		return new HomePage();
+		Thread.sleep(3000);
+		
+		return new HomePage(driver);
+	}
+	
+	public void navigateToMailQueue(String url_mailqueue) throws InterruptedException
+	{
+		driver.get(url_mailqueue);
+		Thread.sleep(2000);
+	}
+	
+	public void selectSiteB() throws InterruptedException
+	{
+		siteSelector.click();
+			
+		siteA.click();
+		siteC.click();
+		driver.findElement(By.xpath("//th[@data-field='JobId']")).click();
+		Thread.sleep(3000);
 	}
 	
 	
-	
-	
-
 }

@@ -6,14 +6,18 @@
   </listeners>
   <test thread-count="5" name="Royal Alliances Test Cases(failed)">
     <classes>
-      <class name="com.ra.qa.testcases.LoginPageTest">
+      <class name="com.ra.qa.testcases.HomePageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="loginTest"/>
-          <include name="setup"/>
-          <include name="validateLoginPageTitleTest"/>
+          <include name="uploadDoneTest"/>
+          <include name="scheduleMailTest"/>
+          <include name="uploadFileTest"/>
+          <include name="clickOnUploadBtnTest"/>
+          <include name="confirmTest"/>
+          <include name="getPageTitleTest"/>
+          <include name="selectRA061215ReadyTest"/>
+          <include name="submitScheduleTest"/>
         </methods>
-      </class> <!-- com.ra.qa.testcases.LoginPageTest -->
+      </class> <!-- com.ra.qa.testcases.HomePageTest -->
     </classes>
   </test> <!-- Royal Alliances Test Cases(failed) -->
 </suite> <!-- Failed suite [Royal Alliances Test Automation Test Suite] -->

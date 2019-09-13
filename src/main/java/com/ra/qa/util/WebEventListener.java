@@ -52,10 +52,10 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		System.out.println("Navigated forward to next page");
 	}
 
-	public void onException(Throwable error, WebDriver driver) {
+	public void onException(Throwable error, WebDriver driver, TestUtil testUtil) {
 		System.out.println("Exception occured: " + error);
 		try {
-			TestUtil.takeScreenshotAtEndOfTest();
+			testUtil.takeScreenshotAtEndOfTest();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -144,6 +144,11 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	}
 
 	public void beforeSwitchToWindow(String arg0, WebDriver arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onException(Throwable throwable, WebDriver driver) {
 		// TODO Auto-generated method stub
 		
 	}

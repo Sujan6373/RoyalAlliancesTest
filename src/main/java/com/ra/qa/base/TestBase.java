@@ -6,20 +6,27 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+
 
 import com.ra.qa.util.TestUtil;
 import com.ra.qa.util.WebEventListener;
 
 public class TestBase {
 	
-	public static WebDriver driver;
-	public static Properties prop;
-	public  static EventFiringWebDriver e_driver;
-	public static WebEventListener eventListener;
+	public WebDriver driver;
+	public Properties prop;
+	public EventFiringWebDriver e_driver;
+	public WebEventListener eventListener;
+	
+	public  JavascriptExecutor js = (JavascriptExecutor) driver;
+	
+	public  Logger log  = Logger.getLogger(TestBase.class);
 	
 	public TestBase()
 	{
@@ -35,7 +42,7 @@ public class TestBase {
 		
 	}
 	
-	public static void initialization()
+	public void initialization()
 	{
 		String broswerName = prop.getProperty("browser");
 		
@@ -46,9 +53,12 @@ public class TestBase {
 		}
 		else if (broswerName.equals("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Sujan\\Documents\\Selenium\\geckodriver-v0.24.0-win64");
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Sujan\\Documents\\Selenium\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
+		
+		//adding log message
+		log.info("**************************launching browser*******************************");
 		
 		e_driver = new EventFiringWebDriver(driver);
 		
