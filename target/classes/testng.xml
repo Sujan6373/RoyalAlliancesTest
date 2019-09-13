@@ -14,11 +14,12 @@
 				<include name="loginTest" />
 			</methods> -->
 			
+			<class name="com.ra.qa.testcases.LoginPageTest"></class> 
 			<class name="com.ra.qa.testcases.HomePageTest"></class>
-			<class name="com.ra.qa.testcases.LoginPageTest"></class>  
+			 <class name="com.ra.qa.testcases.SchedulePageTest"></class> 
 			<class name="com.ra.qa.testcases.HubLoginPageTest"></class>
 			
-			<class name="com.ra.qa.testcases.HomePageTest"></class>
+			<!-- <class name="com.ra.qa.testcases.HomePageTest"></class> -->
 			
 		</classes>
 	</test>

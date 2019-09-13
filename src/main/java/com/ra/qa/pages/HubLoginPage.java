@@ -1,24 +1,49 @@
 package com.ra.qa.pages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import com.ra.qa.base.TestBase;
 
 public class HubLoginPage extends TestBase
 {
 	@FindBy(xpath = "//input[@name='UserName']")
-	WebElement username;
+	WebElement hubusername;
 	
 	@FindBy(xpath = "//input[@type='password']")
-	WebElement password;
+	WebElement hubpassword;
 	
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement submitbtn;
 	
-	public HubLoginPage()
+	@FindBy(xpath = "//select[@id='locationList']")
+	WebElement siteSelector1;
+	
+	@FindBy(xpath = "//button[@type='button']/span[contains(text(),'3 selected')]")
+	WebElement siteSelector;
+	
+	@FindBy(partialLinkText = "Royal Cloud")
+	WebElement royalCloud1;
+	
+	@FindBy(xpath = "//a[@href='/UploadFiles/ViewFiles'][1]")
+	WebElement raMailCloud;
+	
+	@FindBy(xpath = "//a[@class='dropdown-toggle']")
+	WebElement royalCloud;
+	
+	@FindBy(xpath = "//input[@title='Test Site 2 - RA11']")
+	WebElement RA11;
+	
+	@FindBy(xpath = "//input[@title='Jav Test 3 - RA51']")
+	WebElement RA51;
+	
+	public HubLoginPage(WebDriver d)
 	{
+		this.driver = d;
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -27,18 +52,46 @@ public class HubLoginPage extends TestBase
 		return driver.getTitle();
 	}
 	
-	public HubHomePage login(String uname, String pwd) throws InterruptedException
+	public HubHomePage login(String hubuname, String hubpwd) throws InterruptedException
 	{
-		username.sendKeys(uname);
+		hubusername.sendKeys(hubuname);
 		Thread.sleep(1000);
 		
-		password.sendKeys(pwd);
+		hubpassword.sendKeys(hubpwd);
 		Thread.sleep(1000);
 		
 		submitbtn.click();
+		Thread.sleep(3000);
 		
-		return new HubHomePage();
+		return new HubHomePage(driver);
 	}
+	
+	public void selectRA49() throws InterruptedException
+	{/*
+		 * Select select = new Select(siteSelector1);
+		 * select.selectByVisibleText("Test Site 2 - RA11");
+		 * select.selectByVisibleText("Jav Test 3 - RA51");
+		 * driver.findElement(By.xpath("//h1[contains(text(), 'Royal Dashboard')]")).
+		 * click();
+		 */
+		
+		siteSelector.click();
+		RA11.click();
+		RA51.click();
+		driver.findElement(By.xpath("//h1[contains(text(), 'Royal Dashboard')]")).click();
+		
+		Thread.sleep(2000);
+	}
+	
+	public void gotoRoyalCloud() throws InterruptedException
+	{
+		royalCloud.click();
+		Thread.sleep(2000);
+		
+		raMailCloud.click();
+		Thread.sleep(3000);
+	}
+	
 	
 
 }

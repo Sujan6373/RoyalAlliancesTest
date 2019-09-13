@@ -14,8 +14,7 @@ public class LoginPageTest extends TestBase
 	
 	public LoginPageTest()
 	{
-		super();
-		
+		super();		
 	}
 	
 	@Test(priority = 1)
@@ -54,7 +53,7 @@ public class LoginPageTest extends TestBase
 	@Test (priority = 1000)
 	public void tearDown() 
 	{
-		driver.close(); 
+		driver.quit(); 
 	}
 	 
 

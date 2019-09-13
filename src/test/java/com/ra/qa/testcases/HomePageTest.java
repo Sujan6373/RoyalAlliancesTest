@@ -115,7 +115,7 @@ public class HomePageTest extends TestBase
 	@Test (priority = 1000)
 	public void tearDown()
 	{
-		driver.close();
+		driver.quit();
 		System.out.println("****** Closing all the instances of the automated browser *******");
 	}
 

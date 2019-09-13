@@ -2,7 +2,6 @@ package com.ra.qa.testcases;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import com.ra.qa.base.TestBase;
 import com.ra.qa.pages.HomePage;

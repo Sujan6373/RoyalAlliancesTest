@@ -1,8 +1,6 @@
 package com.ra.qa.testcases;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.ra.qa.base.TestBase;
@@ -11,7 +9,6 @@ import com.ra.qa.pages.HubLoginPage;
 
 public class HubLoginPageTest extends TestBase
 {
-
 	HubLoginPage hubLoginPage;
 	HubHomePage hubHomePage;
 	
@@ -20,28 +17,40 @@ public class HubLoginPageTest extends TestBase
 		super();
 	}
 	
-	@BeforeMethod
+	@Test(priority = 10)
 	public void setup()
 	{
 		initialization();
-		hubLoginPage = new HubLoginPage();
+		hubLoginPage = new HubLoginPage(driver);
 	}
 	
-	@Test(priority = 1)
-	public void validateLoginPageTitleTest()
+	@Test(priority = 20)
+	public void validateLoginPageTitleTest() throws InterruptedException
 	{
 		String title = hubLoginPage.validateLoginPageTitle();
+		Thread.sleep(2000);
 		Assert.assertEquals(title, "Royal Alliances | Mailing Services | Irving, TX");
 	}
 	
-	@Test (priority = 2)
+	@Test (priority = 30)
 	public void loginTest() throws InterruptedException
 	{
-		hubHomePage = hubLoginPage.login(prop.getProperty("hubusername"), prop.getProperty("hubpassword"));
+		hubLoginPage.login(prop.getProperty("hubusername"), prop.getProperty("hubpassword"));
+	}
+		
+	@Test(priority = 40)
+	public void selectRA49Test() throws InterruptedException
+	{
+		hubLoginPage.selectRA49();
 	}
 	
+	@Test(priority = 50)
+	public void gotoRoyalCloudTest() throws InterruptedException
+	{
+		hubLoginPage.gotoRoyalCloud();
+	}
 	
-	@AfterMethod
+	@Test(priority = 1000)
 	public void tearDown()
 	{
 		driver.quit();

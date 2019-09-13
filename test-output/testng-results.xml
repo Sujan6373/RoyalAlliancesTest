@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37293" started-at="2019-09-13T14:10:16 CDT" finished-at="2019-09-13T14:10:53 CDT">
+  <suite name="Default suite" duration-ms="28396" started-at="2019-09-13T17:11:05 CDT" finished-at="2019-09-13T17:11:34 CDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37293" started-at="2019-09-13T14:10:16 CDT" finished-at="2019-09-13T14:10:53 CDT">
-      <class name="com.ra.qa.testcases.SchedulePageTest">
-        <test-method status="PASS" signature="setup()[pri:10, instance:com.ra.qa.testcases.SchedulePageTest@1d8d30f7]" name="setup" duration-ms="33451" started-at="2019-09-13T14:10:16 CDT" finished-at="2019-09-13T14:10:50 CDT">
+    <test name="Default test" duration-ms="28396" started-at="2019-09-13T17:11:05 CDT" finished-at="2019-09-13T17:11:34 CDT">
+      <class name="com.ra.qa.testcases.HubLoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:10, instance:com.ra.qa.testcases.HubLoginPageTest@1d8d30f7]" name="setup" duration-ms="11111" started-at="2019-09-13T17:11:05 CDT" finished-at="2019-09-13T17:11:16 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getPageTitleTest()[pri:20, instance:com.ra.qa.testcases.SchedulePageTest@1d8d30f7]" name="getPageTitleTest" duration-ms="12" started-at="2019-09-13T14:10:50 CDT" finished-at="2019-09-13T14:10:50 CDT">
+        <test-method status="PASS" signature="validateLoginPageTitleTest()[pri:20, instance:com.ra.qa.testcases.HubLoginPageTest@1d8d30f7]" name="validateLoginPageTitleTest" duration-ms="2016" started-at="2019-09-13T17:11:16 CDT" finished-at="2019-09-13T17:11:18 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getPageTitleTest -->
-        <test-method status="PASS" signature="navigateToScheduledTabTest()[pri:30, instance:com.ra.qa.testcases.SchedulePageTest@1d8d30f7]" name="navigateToScheduledTabTest" duration-ms="3066" started-at="2019-09-13T14:10:50 CDT" finished-at="2019-09-13T14:10:53 CDT">
+        </test-method> <!-- validateLoginPageTitleTest -->
+        <test-method status="PASS" signature="loginTest()[pri:30, instance:com.ra.qa.testcases.HubLoginPageTest@1d8d30f7]" name="loginTest" duration-ms="6679" started-at="2019-09-13T17:11:18 CDT" finished-at="2019-09-13T17:11:25 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToScheduledTabTest -->
-        <test-method status="PASS" signature="verifyFilePresentF1F2Test()[pri:40, instance:com.ra.qa.testcases.SchedulePageTest@1d8d30f7]" name="verifyFilePresentF1F2Test" duration-ms="48" started-at="2019-09-13T14:10:53 CDT" finished-at="2019-09-13T14:10:53 CDT">
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="selectRA49Test()[pri:40, instance:com.ra.qa.testcases.HubLoginPageTest@1d8d30f7]" name="selectRA49Test" duration-ms="2281" started-at="2019-09-13T17:11:25 CDT" finished-at="2019-09-13T17:11:27 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyFilePresentF1F2Test -->
-        <test-method status="PASS" signature="tearDown()[pri:1000, instance:com.ra.qa.testcases.SchedulePageTest@1d8d30f7]" name="tearDown" duration-ms="684" started-at="2019-09-13T14:10:53 CDT" finished-at="2019-09-13T14:10:53 CDT">
+        </test-method> <!-- selectRA49Test -->
+        <test-method status="PASS" signature="gotoRoyalCloudTest()[pri:50, instance:com.ra.qa.testcases.HubLoginPageTest@1d8d30f7]" name="gotoRoyalCloudTest" duration-ms="5602" started-at="2019-09-13T17:11:27 CDT" finished-at="2019-09-13T17:11:33 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotoRoyalCloudTest -->
+        <test-method status="PASS" signature="tearDown()[pri:1000, instance:com.ra.qa.testcases.HubLoginPageTest@1d8d30f7]" name="tearDown" duration-ms="671" started-at="2019-09-13T17:11:33 CDT" finished-at="2019-09-13T17:11:34 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.ra.qa.testcases.SchedulePageTest -->
+      </class> <!-- com.ra.qa.testcases.HubLoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
