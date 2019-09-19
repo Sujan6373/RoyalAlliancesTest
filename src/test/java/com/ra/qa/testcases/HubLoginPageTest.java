@@ -41,7 +41,7 @@ public class HubLoginPageTest extends TestBase
 	@Test(priority = 40)
 	public void selectRA49Test() throws InterruptedException
 	{
-		hubLoginPage.selectRA49();
+		hubLoginPage.selectRA11();
 	}
 	
 	@Test(priority = 50)

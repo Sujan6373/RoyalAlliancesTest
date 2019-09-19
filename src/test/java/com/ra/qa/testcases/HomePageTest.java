@@ -25,7 +25,7 @@ public class HomePageTest extends TestBase
 		initialization();
 		loginPage = new LoginPage(driver);
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		System.out.println("************ Initializing the browser and logging in to RA *************");
+		System.out.println("************ Initializing the browser and logging in to Site B - RA135 *************");
 	}
 	
 	@Test (priority = 20)
@@ -60,7 +60,7 @@ public class HomePageTest extends TestBase
 	{
 		homePage.uploadFile(prop.getProperty("feederfilepath1"));
 		homePage.uploadFile(prop.getProperty("feederfilepath2"));
-		System.out.println("************ Uploading the 2 feeder files  *************");
+		System.out.println("************ Uploading the 2 Feeder Files  *************");
 	}
 	
 	@Test (priority = 60)

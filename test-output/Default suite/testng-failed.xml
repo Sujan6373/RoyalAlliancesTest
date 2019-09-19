@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ra.qa.testcases.HubLoginPageTest">
+      <class name="com.ra.qa.testcases.AccountingPageTest">
         <methods>
-          <include name="gotoRoyalCloudTest"/>
+          <include name="verifyCostSummary558579Test"/>
         </methods>
-      </class> <!-- com.ra.qa.testcases.HubLoginPageTest -->
+      </class> <!-- com.ra.qa.testcases.AccountingPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,6 +1,7 @@
 package com.ra.qa.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,9 +29,13 @@ public class LoginPage extends TestBase
 	@FindBy(xpath = "//label[contains(text(), 'Site - C')]")
 	WebElement siteC;
 	
+	@FindBy(xpath = "//a[contains(text(),'Accounting')]")
+	WebElement accounting558579;
+	
 	public LoginPage(WebDriver d)
 	{
 		this.driver = d;
+		js = (JavascriptExecutor)d;
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -67,6 +72,14 @@ public class LoginPage extends TestBase
 		siteC.click();
 		driver.findElement(By.xpath("//th[@data-field='JobId']")).click();
 		Thread.sleep(3000);
+	}
+	
+	public AccountingPage clickOnAccounting558579() throws InterruptedException
+	{
+		js.executeScript("window.scrollBy(0,400)");
+		accounting558579.click();
+		Thread.sleep(3000);
+		return new AccountingPage(driver);
 	}
 	
 	

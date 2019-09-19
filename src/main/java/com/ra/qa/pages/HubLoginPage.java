@@ -5,8 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
-
 import com.ra.qa.base.TestBase;
 
 public class HubLoginPage extends TestBase
@@ -41,6 +39,9 @@ public class HubLoginPage extends TestBase
 	@FindBy(xpath = "//input[@title='Jav Test 3 - RA51']")
 	WebElement RA51;
 	
+	@FindBy(xpath = "//input[@title='Jav Troubleshooting - RA49']")
+	WebElement RA49;
+	
 	public HubLoginPage(WebDriver d)
 	{
 		this.driver = d;
@@ -66,7 +67,7 @@ public class HubLoginPage extends TestBase
 		return new HubHomePage(driver);
 	}
 	
-	public void selectRA49() throws InterruptedException
+	public void selectRA11() throws InterruptedException
 	{/*
 		 * Select select = new Select(siteSelector1);
 		 * select.selectByVisibleText("Test Site 2 - RA11");
@@ -76,8 +77,8 @@ public class HubLoginPage extends TestBase
 		 */
 		
 		siteSelector.click();
-		RA11.click();
 		RA51.click();
+		RA49.click();
 		driver.findElement(By.xpath("//h1[contains(text(), 'Royal Dashboard')]")).click();
 		
 		Thread.sleep(2000);
