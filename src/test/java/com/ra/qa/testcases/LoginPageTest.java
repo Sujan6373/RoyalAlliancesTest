@@ -9,6 +9,12 @@ import com.ra.qa.pages.LoginPage;
 
 public class LoginPageTest extends TestBase
 {
+//	Logs in as Feeder
+//	Navigates to Mailqueue
+//	Selects Site B RA-135
+//	Validates the title of the page
+	
+	
 	LoginPage loginPage;
 	HomePage homePage;
 	

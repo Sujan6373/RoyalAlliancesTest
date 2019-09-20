@@ -25,6 +25,7 @@ public class AccountingPageTest extends TestBase
 	{
 		initialization();
 		loginPage = new LoginPage(driver);
+		homePage = new HomePage(driver);
 		
 		System.out.println("************ Initializing the browser and logging in as NewCustomer2 *************");
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
@@ -62,10 +63,17 @@ public class AccountingPageTest extends TestBase
 	{
 		MailingCostReport result = accountingPage.verifyCostSummary558579();
 				
-		Assert.assertEquals(result.GetPostageCost(), "$136,811.11", "Postage Cost");
-		Assert.assertEquals(result.GetServiceCharge(), "$5,585.79", "Service Charge");
-		Assert.assertEquals(result.GetTotalJobCost(), "$142,396.90", "Total Job Cost");
-		Assert.assertEquals(result.GetTransactionTotal(), "($142,396.90)", "Transaction Total");
+		Assert.assertEquals(result.getPostageCost(), "$136,811.11", "Postage Cost");
+		Assert.assertEquals(result.getServiceCharge(), "$5,585.79", "Service Charge");
+		Assert.assertEquals(result.getTotalJobCost(), "$142,396.90", "Total Job Cost");
+		Assert.assertEquals(result.getTransactionTotal(), "($142,396.90)", "Transaction Total");
+		Assert.assertEquals(result.getCommercialPostageCost(), "$0.2410", "Automation Commercial Postage Cost");
+		Assert.assertEquals(result.getCommercialVolume(), "488,816", "Automation Commercial Volume");
+		Assert.assertEquals(result.getCommercialCost(), "$117,804.66", "Automation Commercial Cost");
+		Assert.assertEquals(result.getNonAutomationCommercialVolume(), "69,763", "Non Automation Commercial Volume");
+		Assert.assertEquals(result.getNonAutomationCommercialCost(), "$19,006.46", "Non Automation Commercial Cost");
+		Assert.assertEquals(result.getTotalPostageCost(), "$136,811.11", "Total Postage Cost");
+		Assert.assertEquals(result.getProcessingFee(), "$5,585.79", "Processing Fee");
 	}
 	
 	@Test (priority = 1000)

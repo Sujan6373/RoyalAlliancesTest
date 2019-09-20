@@ -18,6 +18,9 @@
 			<class name="com.ra.qa.testcases.HomePageTest"></class>
 			 <class name="com.ra.qa.testcases.SchedulePageTest"></class> 
 			<class name="com.ra.qa.testcases.HubLoginPageTest"></class>
+			<class name="com.ra.qa.testcases.HubHomePageTest"></class>
+			<class name="com.ra.qa.testcases.ShipmentRequestPageTest"></class>
+			<class name="com.ra.qa.testcases.AccountingPageTest"></class>
 			
 			<!-- <class name="com.ra.qa.testcases.HomePageTest"></class> -->
 			

@@ -41,6 +41,19 @@ public class AccountingPage extends TestBase
 	@FindBy (xpath = "//table[@class='table-condensed modal-table']/descendant::tr/descendant::td/strong[contains(text(),'$117,804.66')]")
 	WebElement automationCommercialCost558579;
 		
+	@FindBy (xpath = "//table[@class='table-condensed modal-table']/descendant::tr/descendant::td[contains(text(),'69,763')]")
+	WebElement nonAutomationCommercialVolume558579;
+	
+	@FindBy (xpath = "//table[@class='table-condensed modal-table']/descendant::tr/descendant::td/strong[contains(text(),'$19,006.46')]")
+	WebElement nonAutomationCommercialCost558579;
+	
+	@FindBy (xpath = "//table[@class='table-condensed modal-table']/descendant::tr/descendant::td/strong[contains(text(),'$136,811.11')]")
+	WebElement totalPostageCost558579;
+	
+	@FindBy (xpath = "//table[@class='table-condensed modal-table']/descendant::tr/descendant::td[contains(text(),'$5,585.79')]")
+	WebElement processingFee558579;
+		
+	
 	public AccountingPage(WebDriver d)
 	{
 		this.driver = d;
@@ -135,7 +148,13 @@ public class AccountingPage extends TestBase
 		  serviceCharges558579.getText(),
 		  totalJobCost558579.getText(), 
 		  transactionTotal558579.getText(),
-		  
+		  automationCommercialPostageCost558579.getText(),
+		  automationCommercialVolume558579.getText(),
+		  automationCommercialCost558579.getText(),
+		  nonAutomationCommercialVolume558579.getText(),
+		  nonAutomationCommercialCost558579.getText(),
+		  totalPostageCost558579.getText(),
+		  processingFee558579.getText()		  
 		 );
 		return report;
 	}
