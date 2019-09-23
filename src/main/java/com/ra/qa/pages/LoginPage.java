@@ -74,12 +74,12 @@ public class LoginPage extends TestBase
 		Thread.sleep(3000);
 	}
 	
-	public AccountingPage clickOnAccounting558579() throws InterruptedException
+	public FeederAccountingPage clickOnAccounting558579() throws InterruptedException
 	{
 		js.executeScript("window.scrollBy(0,400)");
 		accounting558579.click();
 		Thread.sleep(3000);
-		return new AccountingPage(driver);
+		return new FeederAccountingPage(driver);
 	}
 	
 	

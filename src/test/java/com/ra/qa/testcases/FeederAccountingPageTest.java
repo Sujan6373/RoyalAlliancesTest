@@ -4,18 +4,18 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.ra.qa.base.TestBase;
-import com.ra.qa.pages.AccountingPage;
-import com.ra.qa.pages.AccountingPage.MailingCostReport;
+import com.ra.qa.pages.FeederAccountingPage.MailingCostReport;
+import com.ra.qa.pages.FeederAccountingPage;
 import com.ra.qa.pages.HomePage;
 import com.ra.qa.pages.LoginPage;
 
-public class AccountingPageTest extends TestBase
+public class FeederAccountingPageTest extends TestBase
 {
 	LoginPage loginPage;
 	HomePage homePage;
-	AccountingPage accountingPage;
+	FeederAccountingPage accountingPage;
 	
-	public AccountingPageTest()
+	public FeederAccountingPageTest()
 	{
 		super();
 	}

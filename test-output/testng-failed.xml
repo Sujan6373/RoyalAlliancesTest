@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ra.qa.testcases.AccountingPageTest">
+      <class name="com.ra.qa.testcases.HubAccountingPageTest">
         <methods>
-          <include name="verifyCostSummary558579Test"/>
+          <include name="setup"/>
+          <include name="verifyHubAccounting"/>
         </methods>
-      </class> <!-- com.ra.qa.testcases.AccountingPageTest -->
+      </class> <!-- com.ra.qa.testcases.HubAccountingPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

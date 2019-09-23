@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.ra.qa.base.TestBase;
 
-public class AccountingPage extends TestBase
+public class FeederAccountingPage extends TestBase
 {
 	
 	@FindBy(linkText = "/AccountingDetail")
@@ -54,7 +54,7 @@ public class AccountingPage extends TestBase
 	WebElement processingFee558579;
 		
 	
-	public AccountingPage(WebDriver d)
+	public FeederAccountingPage(WebDriver d)
 	{
 		this.driver = d;
 		js = (JavascriptExecutor)d;

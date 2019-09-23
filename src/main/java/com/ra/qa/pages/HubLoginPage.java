@@ -1,6 +1,7 @@
 package com.ra.qa.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -42,10 +43,14 @@ public class HubLoginPage extends TestBase
 	@FindBy(xpath = "//input[@title='Jav Troubleshooting - RA49']")
 	WebElement RA49;
 	
+	@FindBy(xpath = "//a[contains(text(),'Accounting Details')]")
+	WebElement hubAccount558579;
+	
 	public HubLoginPage(WebDriver d)
 	{
 		this.driver = d;
 		PageFactory.initElements(driver, this);
+		js = (JavascriptExecutor)d;
 	}
 	
 	public String validateLoginPageTitle()
@@ -91,6 +96,14 @@ public class HubLoginPage extends TestBase
 		
 		raMailCloud.click();
 		Thread.sleep(3000);
+	}
+	
+	public HubAccountingPage clickOnHubAccounting558579() throws InterruptedException
+	{
+		js.executeScript("window.scrollBy(0,400)");
+		hubAccount558579.click();
+		Thread.sleep(3000);
+		return new HubAccountingPage(driver);
 	}
 	
 	

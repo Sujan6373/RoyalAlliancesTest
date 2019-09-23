@@ -1,17 +1,1 @@
-2019-09-20 11:56:39,290  INFO [main] TestBase:61 - **************************launching browser*******************************
-2019-09-20 11:57:03,825  INFO [main] TestBase:61 - **************************launching browser*******************************
-2019-09-20 12:03:20,702  INFO [main] TestBase:61 - **************************launching browser*******************************
-2019-09-20 12:03:55,235  INFO [main] TestBase:61 - **************************launching browser*******************************
-2019-09-20 12:04:22,343  INFO [main] TestBase:61 - **************************launching browser*******************************
-2019-09-20 12:04:51,415  INFO [main] TestBase:61 - **************************launching browser*******************************
-2019-09-20 12:11:55,720  INFO [main] TestBase:61 - **************************launching browser*******************************
-2019-09-20 12:12:25,839 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-2019-09-20 12:12:25,840 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-2019-09-20 12:12:25,841 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2019-09-20 12:12:25,842 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2019-09-20 12:12:25,843 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sujan/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-2019-09-20 12:12:26,090 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-2019-09-20 12:12:26,091 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-2019-09-20 12:12:26,091 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2019-09-20 12:12:26,092 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2019-09-20 12:12:26,092 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sujan/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-09-23 15:25:11,491  INFO [main] TestBase:61 - **************************launching browser*******************************

@@ -6,12 +6,86 @@
   </listeners>
   <test thread-count="5" name="Royal Alliances Test Cases(failed)">
     <classes>
+      <class name="com.ra.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="selectSiteBTest"/>
+          <include name="setup"/>
+          <include name="validateLoginPageTitleTest"/>
+          <include name="navigateToMailQueueTest"/>
+        </methods>
+      </class> <!-- com.ra.qa.testcases.LoginPageTest -->
+      <class name="com.ra.qa.testcases.ShipmentRequestPageTest">
+        <methods>
+          <include name="clickBrowse558579Test"/>
+          <include name="finalizeSubmission558579Test"/>
+          <include name="finalizeButton558579Test"/>
+          <include name="acceptMkt558579Test"/>
+          <include name="verifyFinalizationCompleted558579Test"/>
+          <include name="close558579Test"/>
+          <include name="setup"/>
+          <include name="process558579Test"/>
+          <include name="submitFinal558579Test"/>
+          <include name="submit558579Test"/>
+          <include name="sendJobReference558579Test"/>
+          <include name="clickOnInfoRAMailAccepted558579"/>
+          <include name="upload558579Test"/>
+          <include name="viewReport558579Test"/>
+          <include name="testDown"/>
+        </methods>
+      </class> <!-- com.ra.qa.testcases.ShipmentRequestPageTest -->
+      <class name="com.ra.qa.testcases.HubHomePageTest">
+        <methods>
+          <include name="clickOnInfoMktTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ra.qa.testcases.HubHomePageTest -->
+      <class name="com.ra.qa.testcases.HomePageTest">
+        <methods>
+          <include name="gotoMarketingTabTest"/>
+          <include name="setup"/>
+          <include name="uploadDoneTest"/>
+          <include name="tearDown"/>
+          <include name="scheduleMailTest"/>
+          <include name="uploadFileTest"/>
+          <include name="clickOnUploadBtnTest"/>
+          <include name="confirmTest"/>
+          <include name="getPageTitleTest"/>
+          <include name="selectRA061215ReadyTest"/>
+          <include name="selectSiteB"/>
+          <include name="submitScheduleTest"/>
+        </methods>
+      </class> <!-- com.ra.qa.testcases.HomePageTest -->
       <class name="com.ra.qa.testcases.HubLoginPageTest">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
           <include name="loginTest"/>
+          <include name="validateLoginPageTitleTest"/>
+          <include name="selectRA49Test"/>
+          <include name="gotoRoyalCloudTest"/>
         </methods>
       </class> <!-- com.ra.qa.testcases.HubLoginPageTest -->
+      <class name="com.ra.qa.testcases.SchedulePageTest">
+        <methods>
+          <include name="verifyFilePresentF1F2Test"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="navigateToScheduledTabTest"/>
+          <include name="getPageTitleTest"/>
+        </methods>
+      </class> <!-- com.ra.qa.testcases.SchedulePageTest -->
+      <class name="com.ra.qa.testcases.AccountingPageTest">
+        <methods>
+          <include name="clickOnTransactionAmount558579Test"/>
+          <include name="mailingCostSummary558579Test"/>
+          <include name="verifyCostSummary558579Test"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ra.qa.testcases.AccountingPageTest -->
     </classes>
   </test> <!-- Royal Alliances Test Cases(failed) -->
 </suite> <!-- Failed suite [Royal Alliances Test Automation Test Suite] -->
