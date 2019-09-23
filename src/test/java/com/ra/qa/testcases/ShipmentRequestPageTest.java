@@ -137,11 +137,8 @@ public class ShipmentRequestPageTest extends TestBase
 	
 	
 	
-	
-	
-	
 	@Test (priority = 1000)
-	public void testDown()
+	public void tearDown()
 	{
 		driver.quit();
 		System.out.println("****** Closing all the instances of the browser *******");
