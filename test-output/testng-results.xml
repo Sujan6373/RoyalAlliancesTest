@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18377" started-at="2019-09-23T15:25:08 CDT" finished-at="2019-09-23T15:25:27 CDT">
+  <suite name="Default suite" duration-ms="45828" started-at="2019-09-23T17:07:03 CDT" finished-at="2019-09-23T17:07:49 CDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18377" started-at="2019-09-23T15:25:08 CDT" finished-at="2019-09-23T15:25:27 CDT">
-      <class name="com.ra.qa.testcases.HubAccountingPageTest">
-        <test-method status="PASS" signature="setup()[pri:10, instance:com.ra.qa.testcases.HubAccountingPageTest@49e202ad]" name="setup" duration-ms="18182" started-at="2019-09-23T15:25:08 CDT" finished-at="2019-09-23T15:25:27 CDT">
+    <test name="Default test" duration-ms="45828" started-at="2019-09-23T17:07:03 CDT" finished-at="2019-09-23T17:07:49 CDT">
+      <class name="com.ra.qa.testcases.RAAdminLoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:10, instance:com.ra.qa.testcases.RAAdminLoginPageTest@ffaa6af]" name="setup" duration-ms="5191" started-at="2019-09-23T17:07:03 CDT" finished-at="2019-09-23T17:07:08 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyHubAccounting()[pri:20, instance:com.ra.qa.testcases.HubAccountingPageTest@49e202ad]" name="verifyHubAccounting" duration-ms="94" started-at="2019-09-23T15:25:27 CDT" finished-at="2019-09-23T15:25:27 CDT">
+        <test-method status="PASS" signature="validateLoginPageTitleTest()[pri:20, instance:com.ra.qa.testcases.RAAdminLoginPageTest@ffaa6af]" name="validateLoginPageTitleTest" duration-ms="2010" started-at="2019-09-23T17:07:08 CDT" finished-at="2019-09-23T17:07:10 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHubAccounting -->
-        <test-method status="PASS" signature="tearDown()[pri:1000, instance:com.ra.qa.testcases.HubAccountingPageTest@49e202ad]" name="tearDown" duration-ms="60" started-at="2019-09-23T15:25:27 CDT" finished-at="2019-09-23T15:25:27 CDT">
+        </test-method> <!-- validateLoginPageTitleTest -->
+        <test-method status="PASS" signature="loginTest()[pri:30, instance:com.ra.qa.testcases.RAAdminLoginPageTest@ffaa6af]" name="loginTest" duration-ms="6660" started-at="2019-09-23T17:07:10 CDT" finished-at="2019-09-23T17:07:17 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="manageAccountTest()[pri:40, instance:com.ra.qa.testcases.RAAdminLoginPageTest@ffaa6af]" name="manageAccountTest" duration-ms="6379" started-at="2019-09-23T17:07:17 CDT" finished-at="2019-09-23T17:07:23 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageAccountTest -->
+        <test-method status="PASS" signature="selectRAAdminAccountTest()[pri:50, instance:com.ra.qa.testcases.RAAdminLoginPageTest@ffaa6af]" name="selectRAAdminAccountTest" duration-ms="5638" started-at="2019-09-23T17:07:23 CDT" finished-at="2019-09-23T17:07:29 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectRAAdminAccountTest -->
+        <test-method status="PASS" signature="selectRAProfitCenterTest()[pri:60, instance:com.ra.qa.testcases.RAAdminLoginPageTest@ffaa6af]" name="selectRAProfitCenterTest" duration-ms="19243" started-at="2019-09-23T17:07:29 CDT" finished-at="2019-09-23T17:07:48 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectRAProfitCenterTest -->
+        <test-method status="PASS" signature="tearDown()[pri:1000, instance:com.ra.qa.testcases.RAAdminLoginPageTest@ffaa6af]" name="tearDown" duration-ms="649" started-at="2019-09-23T17:07:48 CDT" finished-at="2019-09-23T17:07:49 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.ra.qa.testcases.HubAccountingPageTest -->
+      </class> <!-- com.ra.qa.testcases.RAAdminLoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
