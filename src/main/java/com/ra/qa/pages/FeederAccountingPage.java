@@ -10,11 +10,14 @@ import com.ra.qa.base.TestBase;
 
 public class FeederAccountingPage extends TestBase
 {
+	//String transactionAmount558579_1 = "($142,396.90)";
+	//String transactionAmount = "//a[contains(text(),'($142,396.90)')]";
 	
 	@FindBy(linkText = "/AccountingDetail")
 	WebElement accounting558579;
 	
 	@FindBy(xpath = "//a[contains(text(),'($142,396.90)')]")
+	//@FindBy(xpath = transactionAmount)
 	WebElement transactionAmount558579;
 	
 	@FindBy(xpath = "//a[@onclick[contains(.,'showmorelabel')]][1]")
@@ -75,6 +78,7 @@ public class FeederAccountingPage extends TestBase
 		//js.executeScript("window.scrollBy(0,400)");
 		Thread.sleep(2000);
 		
+		//transactionAmount558579 = driver.findElement(By.xpath("//a[contains(text(),'"+transactionAmount558579_1+"')]"));
 		transactionAmount558579.click();
 		Thread.sleep(3000);
 	}

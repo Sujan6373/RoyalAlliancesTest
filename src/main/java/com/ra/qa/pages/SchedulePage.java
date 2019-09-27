@@ -12,6 +12,10 @@ public class SchedulePage extends TestBase
 	@FindBy(xpath = "//td[contains(text(),'558,579')]//parent::tr[@class='k-master-row']//descendant::td[contains(text(),'Scheduled')]")
 	WebElement F1F2FileScheduled;
 	
+	//@FindBy(xpath = "//td[contains(text(),'264,230')]//parent::tr[@class='k-master-row']//descendant::td[contains(text(),'Scheduled')]")
+	@FindBy(xpath = "//td[contains(text(),'264,230')]//parent::tr[@class='k-master-row']//descendant::td[contains(text(),'Awaiting Payment')]")
+	WebElement PCnLTRFileScheduled;
+	
 	@FindBy(xpath = "//a[contains(text(),'Scheduled')]")
 	WebElement scheduledTab;
 	
@@ -37,6 +41,11 @@ public class SchedulePage extends TestBase
 		 * F1F2FileScheduled.getText(); return fileStatus;
 		 */
 		return F1F2FileScheduled.isDisplayed();
+	}
+	
+	public boolean verifyFilePresentPCnLTRFileScheduled()
+	{
+		return PCnLTRFileScheduled.isDisplayed();
 	}
 
 }

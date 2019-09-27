@@ -12,6 +12,8 @@ public class HubHomePage extends TestBase
 	@FindBy(xpath = "//td[contains(text(),'558,579')][1]//parent::tr//descendant::td/div/div/span[@class='detailInformation']")
 	WebElement mktInfo558579;
 	
+	@FindBy(xpath = "//td[contains(text(),'264,230')][1]//parent::tr//descendant::td/div/div/span[@class='detailInformation']")
+	WebElement PCnLTRInfoIcon;
 	
 	public HubHomePage(WebDriver d) 
 	{
@@ -23,6 +25,14 @@ public class HubHomePage extends TestBase
 	public ShipmentRequestPage clickOnInfoMkt() throws InterruptedException
 	{
 		mktInfo558579.click();
+		Thread.sleep(3000);
+		
+		return new ShipmentRequestPage(driver);
+	}
+	
+	public ShipmentRequestPage clickOnPCnLTRInfoIcon() throws InterruptedException
+	{
+		PCnLTRInfoIcon.click();
 		Thread.sleep(3000);
 		
 		return new ShipmentRequestPage(driver);

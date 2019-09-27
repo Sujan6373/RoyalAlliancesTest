@@ -9,8 +9,8 @@
 
 	<test name="Royal Alliances Test Cases">
 		<classes>
-			<class name="com.ra.qa.testcases.LoginPageTest"></class>
-			<!-- <methods>
+			<!-- <class name="com.ra.qa.testcases.LoginPageTest"></class>
+			<methods>
 				<include name="loginTest" />
 			</methods> -->
 			
@@ -20,8 +20,11 @@
 			<class name="com.ra.qa.testcases.HubLoginPageTest"></class>
 			<class name="com.ra.qa.testcases.HubHomePageTest"></class>
 			<class name="com.ra.qa.testcases.ShipmentRequestPageTest"></class>
-			<class name="com.ra.qa.testcases.AccountingPageTest"></class>
+			<class name="com.ra.qa.testcases.FeederAccountingPageTest"></class>
 			<class name="com.ra.qa.testcases.HubAccountingPageTest"></class>
+			<class name="com.ra.qa.testcases.RAAdminLoginPageTest"></class>
+			<class name="com.ra.qa.testcases.RAAdminHomePageTest"></class>
+			<class name="com.ra.qa.testcases.RAAdminAccountingPageTest"></class>
 			
 			<!-- <class name="com.ra.qa.testcases.HomePageTest"></class> -->
 			

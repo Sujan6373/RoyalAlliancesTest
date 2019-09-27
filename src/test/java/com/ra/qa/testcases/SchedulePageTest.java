@@ -49,7 +49,7 @@ public class SchedulePageTest extends TestBase
 	 
 	@Test(priority = 30)		
 	public void navigateToScheduledTabTest() throws InterruptedException		{		
-		homePage.navigateToScheduledTab();
+		schedulePage = homePage.navigateToScheduledTab();
 	}
 	
 	@Test(priority = 40)

@@ -32,6 +32,8 @@ public class LoginPage extends TestBase
 	@FindBy(xpath = "//a[contains(text(),'Accounting')]")
 	WebElement accounting558579;
 	
+	
+	
 	public LoginPage(WebDriver d)
 	{
 		this.driver = d;
@@ -79,6 +81,8 @@ public class LoginPage extends TestBase
 		js.executeScript("window.scrollBy(0,400)");
 		accounting558579.click();
 		Thread.sleep(3000);
+//		FeederAccountingPage accountingPage = new FeederAccountingPage(driver);
+//		accountingPage.transactionAmount558579_1 = "333333";
 		return new FeederAccountingPage(driver);
 	}
 	
