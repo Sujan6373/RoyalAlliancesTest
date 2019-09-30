@@ -73,7 +73,7 @@ public class RA229HomePageTest extends TestBase
 	{
 		Thread.sleep(1000);
 		homePage.scheduleMail();
-		System.out.println("************ Scheduking the mail *************");
+		System.out.println("************ Scheduling the mail *************");
 	}
 	
 	@Test (priority = 90)
@@ -96,7 +96,7 @@ public class RA229HomePageTest extends TestBase
 	public void tearDown()
 	{
 		driver.quit();
-		System.out.println("****** Closing all the instances of the automated browser *******");
+		System.out.println("****** Closing all the instances of the browser *******");
 	}
 
 

@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ra.qa.testcases.RA229ShipmentRequestPageTest">
+      <class name="com.ra.qa.testcases.RA55HomePageTest">
         <methods>
-          <include name="finalizeButton558579Test"/>
-          <include name="close558579Test"/>
-          <include name="viewReport558579Test"/>
-          <include name="verifyFinalizationCompleted558579Test"/>
+          <include name="clickOnUploadLegacyTest"/>
+          <include name="uploadFeederFileLegacyTest"/>
         </methods>
-      </class> <!-- com.ra.qa.testcases.RA229ShipmentRequestPageTest -->
+      </class> <!-- com.ra.qa.testcases.RA55HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

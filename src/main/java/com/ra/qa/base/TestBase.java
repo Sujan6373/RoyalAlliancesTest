@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.ra.qa.util.TestUtil;
 import com.ra.qa.util.WebEventListener;
@@ -20,6 +20,7 @@ import com.ra.qa.util.WebEventListener;
 public class TestBase {
 	
 	public WebDriver driver;
+	public WebDriverWait wait;
 	public Properties prop;
 	public EventFiringWebDriver e_driver;
 	public WebEventListener eventListener;
@@ -59,6 +60,8 @@ public class TestBase {
 		
 		//adding log message
 		log.info("**************************launching browser*******************************");
+		
+		wait = new WebDriverWait(driver, 20);
 		
 		e_driver = new EventFiringWebDriver(driver);
 		

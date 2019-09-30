@@ -29,9 +29,17 @@ public class LoginPage extends TestBase
 	@FindBy(xpath = "//label[contains(text(), 'Site - C')]")
 	WebElement siteC;
 	
+	@FindBy(xpath = "//h1[contains(text(),'Royal Dashboard')]")
+	WebElement royalDashboard;
+	
 	@FindBy(xpath = "//a[contains(text(),'Accounting')]")
 	WebElement accounting558579;
 	
+	@FindBy(className = "dropdown-toggle")
+	WebElement royalCloud;
+	
+	@FindBy(xpath = "//a[@href='/UploadFiles/ViewFiles']/i[@class='icon-cloud']")
+	WebElement selectRAMailCloud;
 	
 	
 	public LoginPage(WebDriver d)
@@ -73,6 +81,13 @@ public class LoginPage extends TestBase
 		siteA.click();
 		siteC.click();
 		driver.findElement(By.xpath("//th[@data-field='JobId']")).click();
+		Thread.sleep(3000);
+	}
+	
+	public void navigateToRACloud() throws InterruptedException
+	{
+		royalCloud.click();
+		selectRAMailCloud.click();
 		Thread.sleep(3000);
 	}
 	

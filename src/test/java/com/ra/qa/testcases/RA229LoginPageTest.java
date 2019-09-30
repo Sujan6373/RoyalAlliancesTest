@@ -44,11 +44,11 @@ public class RA229LoginPageTest extends TestBase
 		homePage = loginPage.login(prop.getProperty("accuzipusername"), prop.getProperty("accuzippassword"));
 	}
 	
-	@Test (priority = 4)
-	public void navigateToMailQueueTest() throws InterruptedException 
-	{
-		loginPage.navigateToMailQueue(prop.getProperty("url_mailqueue"));
-	}
+//	@Test (priority = 4)
+//	public void navigateToMailQueueTest() throws InterruptedException 
+//	{
+//		loginPage.navigateToMailQueue(prop.getProperty("url_mailqueue"));
+//	}
 	
 	
 	

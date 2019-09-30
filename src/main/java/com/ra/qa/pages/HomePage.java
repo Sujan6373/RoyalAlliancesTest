@@ -1,15 +1,19 @@
 package com.ra.qa.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.ra.qa.base.TestBase;
 
 public class HomePage extends TestBase
 {
+	//WebDriverWait wait = new WebDriverWait(driver, 20);
 	//JavascriptExecutor js = (JavascriptExecutor) driver;	
 	//JavascriptExecutor js;
 	
@@ -47,9 +51,39 @@ public class HomePage extends TestBase
 	@FindBy(xpath = "//a[contains(text(),'Scheduled')]")
 	WebElement scheduledTab;
 	
+	@FindBy(xpath = "//a[contains(text(), 'Site Location ')]")
+	WebElement siteSelector;	
+	
+	@FindBy(xpath = "//button[contains(@class,'multiselect')]")
+	WebElement legacySiteSelector;
+	
+	@FindBy(xpath = "//label/span[contains(text(),'RA56')]")
+	WebElement siteRA56;
+	
+	@FindBy(xpath = "//label/span[contains(text(),'RA57')]")
+	WebElement siteRA57;
+	
+	@FindBy(xpath = "//h1[contains(text(),'Royal Dashboard')]")
+	WebElement royalDashboard;
+	
+	@FindBy(className = "dropdown-toggle")
+	WebElement royalCloud;
+	
+	@FindBy(xpath = "//a[@href='/UploadFiles/ViewFiles']/i[@class='icon-cloud']")
+	WebElement selectRAMailCloud;
+	
+	@FindBy (className = "accordion-toggle")
+	WebElement uploadNewFile;
+	
+	@FindBy (xpath = "//input[contains(@id,'html5')]")
+	WebElement uploadFeederFile;
+	
 	public HomePage(WebDriver d)
 	{
 		this.driver = d;
+		//this.wait = w;
+		//wait = (WebDriverWait) d;
+		wait = new WebDriverWait(driver, 20);
 		js = (JavascriptExecutor) d;
 		PageFactory.initElements(driver, this);
 	}
@@ -57,6 +91,32 @@ public class HomePage extends TestBase
 	public String getPageTitle()
 	{
 		return driver.getTitle();
+	}
+	
+	public void selectSiteRA55() throws InterruptedException
+	{
+		legacySiteSelector.click();
+			
+		siteRA56.click();
+		siteRA57.click();
+		
+		// click on the Dashboard of the RA Cloud
+		royalDashboard.click(); 
+		Thread.sleep(3000);
+	}
+	
+	public void navigateToRACloud() throws InterruptedException
+	{
+ 		wait.until(ExpectedConditions.visibilityOf(royalCloud));
+		royalCloud.click();
+		selectRAMailCloud.click();
+		//Thread.sleep(3000);
+	}
+	
+	public void clickOnUploadLegacy() throws InterruptedException
+	{
+		wait.until(ExpectedConditions.visibilityOf(uploadNewFile));
+		uploadNewFile.click();
 	}
 	
 	public void clickOnUploadBtn() throws InterruptedException 
@@ -69,6 +129,18 @@ public class HomePage extends TestBase
 	{
 		uploadFile.sendKeys(filePath);
 		Thread.sleep(15000);
+	}
+	
+	public void uploadFeederFileLegacy(String filePath) throws InterruptedException
+	{
+		uploadFeederFile.sendKeys(filePath);
+		WebElement upload = driver.findElement(By.xpath("//a[contains(@id,'upload')]"));
+		wait.until(ExpectedConditions.visibilityOf(upload));
+		upload.click();
+		
+		WebElement okayBtn = driver.findElement(By.name("successOkButton"));
+		wait.until(ExpectedConditions.visibilityOf(okayBtn));
+		okayBtn.click();
 	}
 	
 	public void uploadDone() throws InterruptedException

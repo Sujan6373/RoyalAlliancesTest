@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Royal Alliances Test Automation Test Suite]">
-  <listeners>
-    <listener class-name="com.ra.ExtentReportListener.ExtentReporterNG"/>
-  </listeners>
-  <test thread-count="5" name="Royal Alliances Test Cases(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ra.qa.testcases.RA229ShipmentRequestPageTest">
+      <class name="com.ra.qa.testcases.RA55HomePageTest">
         <methods>
-          <include name="finalizeButton558579Test"/>
-          <include name="close558579Test"/>
-          <include name="viewReport558579Test"/>
-          <include name="verifyFinalizationCompleted558579Test"/>
+          <include name="clickOnUploadLegacyTest"/>
+          <include name="uploadFeederFileLegacyTest"/>
         </methods>
-      </class> <!-- com.ra.qa.testcases.RA229ShipmentRequestPageTest -->
+      </class> <!-- com.ra.qa.testcases.RA55HomePageTest -->
     </classes>
-  </test> <!-- Royal Alliances Test Cases(failed) -->
-</suite> <!-- Failed suite [Royal Alliances Test Automation Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

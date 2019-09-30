@@ -10,8 +10,6 @@ import com.ra.qa.pages.ShipmentRequestPage;
 
 public class RA229ShipmentRequestPageTest extends TestBase
 {
-
-	
 	HubLoginPage hubLoginPage;
 	HubHomePage hubHomePage;
 	ShipmentRequestPage shipmentRequestPage;
@@ -38,21 +36,21 @@ public class RA229ShipmentRequestPageTest extends TestBase
 	}
 	
 	@Test(priority = 20)
-	public void acceptMkt558579Test() throws InterruptedException
+	public void acceptPCnLTRTest() throws InterruptedException
 	{
 		shipmentRequestPage.acceptMkt558579();
 		System.out.println("************ Accept the 558579 Mkt File *************");
 	}
 	
 	@Test(priority = 30)
-	public void sendJobReference558579Test() throws InterruptedException
+	public void sendJobReferenceTest() throws InterruptedException
 	{
 		shipmentRequestPage.sendJobReference558579("SujPCnLTR");
 		System.out.println("************ Sending the Job Reference Number *************");
 	}
 	
 	@Test(priority = 40)
-	public void submit558579Test() throws InterruptedException
+	public void submit9Test() throws InterruptedException
 	{
 		shipmentRequestPage.submit558579();
 		System.out.println("************ Submit the Job Reference Number and Cliking on 'OK' Alert Window *************");
@@ -61,21 +59,21 @@ public class RA229ShipmentRequestPageTest extends TestBase
 	}
 	
 	@Test(priority = 50)
-	public void clickOnInfoRAMailAccepted558579() throws InterruptedException
+	public void clickOnInfoRAMailAccepted() throws InterruptedException
 	{
 		hubHomePage.clickOnPCnLTRInfoIcon();
 		System.out.println("************ Click on Information icon for File RA Mail Accepted 558,579 *************");
 	}
 	
 	@Test (priority = 60)
-	public void submitFinal558579Test() throws InterruptedException
+	public void submitFinalTest() throws InterruptedException
 	{
 		shipmentRequestPage.submitFinal558579();
 		System.out.println("************ Click on the Submit Final Document Process *************");
 	}
 	
 	@Test (priority = 70)
-	public void clickBrowse558579Test() throws InterruptedException
+	public void clickBrowseTest() throws InterruptedException
 	{
 		System.out.println("************ Uploading the Hub File *************");
 
@@ -85,54 +83,53 @@ public class RA229ShipmentRequestPageTest extends TestBase
 	}
 	
 	@Test (priority = 80)
-	public void upload558579Test() throws InterruptedException
+	public void uploadTest() throws InterruptedException
 	{
 		System.out.println("************ Clicking on the Upload Button *************");
 		shipmentRequestPage.upload558579();
 	}
 	
 	@Test (priority = 90)
-	public void process558579Test() throws InterruptedException
+	public void processTest() throws InterruptedException
 	{
 		System.out.println("************ Clicking on the Process Button *************");
 		shipmentRequestPage.processPCnLTR();
 	}
 	
 	@Test (priority = 100)
-	public void finalizeButton558579Test() throws InterruptedException
+	public void finalizeButtonTest() throws InterruptedException
 	{
 		System.out.println("************ Clicking on the Finalize Submission Button *************");
 		shipmentRequestPage.finalizeButton558579();
 	}
 	
 	@Test (priority = 110)
-	public void viewReport558579Test() throws InterruptedException
+	public void viewReportTest() throws InterruptedException
 	{
 		System.out.println("************ Clicking on the View Report Button *************");
 		shipmentRequestPage.viewReport558579();
 	}
 	
 	@Test (priority = 120)
-	public void finalizeSubmission558579Test() throws InterruptedException
+	public void finalizeSubmissionTest() throws InterruptedException
 	{
 		System.out.println("************ Clicking on the View Report Button *************");
 		shipmentRequestPage.finalizeSubmission558579();
 	}
 	
 	@Test (priority = 130)
-	public void close558579Test() throws InterruptedException
+	public void closeTest() throws InterruptedException
 	{
 		System.out.println("************ Clicking on the View Report Button *************");
 		shipmentRequestPage.close558579();
 	}
 	
 	@Test (priority = 140)
-	public void verifyFinalizationCompleted558579Test() throws InterruptedException
+	public void verifyFinalizationCompletedTest() throws InterruptedException
 	{
 		System.out.println("************ Clicking on the View Report Button *************");
 		Assert.assertEquals(shipmentRequestPage.verifyFinalizationCompleted558579(), "Finalization completed");
 	}
-	
 	
 	
 	@Test (priority = 1000)
