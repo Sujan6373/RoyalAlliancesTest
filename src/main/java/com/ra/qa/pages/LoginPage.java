@@ -29,8 +29,18 @@ public class LoginPage extends TestBase
 	@FindBy(xpath = "//label[contains(text(), 'Site - C')]")
 	WebElement siteC;
 	
+	@FindBy(xpath = "//h1[contains(text(),'Royal Dashboard')]")
+	WebElement royalDashboard;
+	
 	@FindBy(xpath = "//a[contains(text(),'Accounting')]")
 	WebElement accounting558579;
+	
+	@FindBy(className = "dropdown-toggle")
+	WebElement royalCloud;
+	
+	@FindBy(xpath = "//a[@href='/UploadFiles/ViewFiles']/i[@class='icon-cloud']")
+	WebElement selectRAMailCloud;
+	
 	
 	public LoginPage(WebDriver d)
 	{
@@ -74,11 +84,20 @@ public class LoginPage extends TestBase
 		Thread.sleep(3000);
 	}
 	
+	public void navigateToRACloud() throws InterruptedException
+	{
+		royalCloud.click();
+		selectRAMailCloud.click();
+		Thread.sleep(3000);
+	}
+	
 	public FeederAccountingPage clickOnAccounting558579() throws InterruptedException
 	{
 		js.executeScript("window.scrollBy(0,400)");
 		accounting558579.click();
 		Thread.sleep(3000);
+//		FeederAccountingPage accountingPage = new FeederAccountingPage(driver);
+//		accountingPage.transactionAmount558579_1 = "333333";
 		return new FeederAccountingPage(driver);
 	}
 	

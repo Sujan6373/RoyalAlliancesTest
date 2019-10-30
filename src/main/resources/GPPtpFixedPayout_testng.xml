@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Royal Alliances Test Automation Test Suite">
+
+	<listeners>
+		<listener
+			class-name="com.ra.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+
+	<test name="Royal Alliances Test Cases">
+		<classes>
+
+			<class name="com.ra.qa.testcases.RA229LoginPageTest"></class>
+			<class name="com.ra.qa.testcases.RA229HomePageTest"></class>
+			<class name="com.ra.qa.testcases.RA229SchedulePageTest"></class>
+			<class name="com.ra.qa.testcases.RA229ShipmentRequestPageTest"></class>
+
+			<!-- <class name="com.ra.qa.testcases.HomePageTest"></class> <class name="com.ra.qa.testcases.SchedulePageTest"></class> 
+				<class name="com.ra.qa.testcases.HubLoginPageTest"></class> <class name="com.ra.qa.testcases.HubHomePageTest"></class> 
+				<class name="com.ra.qa.testcases.ShipmentRequestPageTest"></class> <class 
+				name="com.ra.qa.testcases.FeederAccountingPageTest"></class> <class name="com.ra.qa.testcases.HubAccountingPageTest"></class> 
+				<class name="com.ra.qa.testcases.RAAdminLoginPageTest"></class> <class name="com.ra.qa.testcases.RAAdminHomePageTest"></class> 
+				<class name="com.ra.qa.testcases.RAAdminAccountingPageTest"></class> -->
+
+			<!-- <class name="com.ra.qa.testcases.HomePageTest"></class> -->
+
+		</classes>
+	</test>
+</suite>

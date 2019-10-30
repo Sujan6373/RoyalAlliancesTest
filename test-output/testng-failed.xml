@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ra.qa.testcases.RAAdminLoginPageTest">
+      <class name="com.ra.qa.general.Test2">
         <methods>
-          <include name="selectRAProfitCenterTest"/>
+          <include name="fbLogin" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- com.ra.qa.testcases.RAAdminLoginPageTest -->
+      </class> <!-- com.ra.qa.general.Test2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

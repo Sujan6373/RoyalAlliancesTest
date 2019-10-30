@@ -1,41 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="45828" started-at="2019-09-23T17:07:03 CDT" finished-at="2019-09-23T17:07:49 CDT">
+  <suite name="Default suite" duration-ms="64898" started-at="2019-10-15T17:56:20 CDT" finished-at="2019-10-15T17:57:25 CDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="45828" started-at="2019-09-23T17:07:03 CDT" finished-at="2019-09-23T17:07:49 CDT">
-      <class name="com.ra.qa.testcases.RAAdminLoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:10, instance:com.ra.qa.testcases.RAAdminLoginPageTest@ffaa6af]" name="setup" duration-ms="5191" started-at="2019-09-23T17:07:03 CDT" finished-at="2019-09-23T17:07:08 CDT">
+    <test name="Default test" duration-ms="64898" started-at="2019-10-15T17:56:20 CDT" finished-at="2019-10-15T17:57:25 CDT">
+      <class name="com.ra.qa.general.Test2">
+        <test-method status="PASS" signature="googleSearch()[pri:10, instance:com.ra.qa.general.Test2@6e6c3152]" name="googleSearch" duration-ms="15988" started-at="2019-10-15T17:56:20 CDT" finished-at="2019-10-15T17:56:36 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateLoginPageTitleTest()[pri:20, instance:com.ra.qa.testcases.RAAdminLoginPageTest@ffaa6af]" name="validateLoginPageTitleTest" duration-ms="2010" started-at="2019-09-23T17:07:08 CDT" finished-at="2019-09-23T17:07:10 CDT">
+        </test-method> <!-- googleSearch -->
+        <test-method status="PASS" signature="fbLogin(java.lang.String, java.lang.String)[pri:20, instance:com.ra.qa.general.Test2@6e6c3152]" name="fbLogin" duration-ms="16959" started-at="2019-10-15T17:56:36 CDT" data-provider="TestData" finished-at="2019-10-15T17:56:53 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ABC1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateLoginPageTitleTest -->
-        <test-method status="PASS" signature="loginTest()[pri:30, instance:com.ra.qa.testcases.RAAdminLoginPageTest@ffaa6af]" name="loginTest" duration-ms="6660" started-at="2019-09-23T17:07:10 CDT" finished-at="2019-09-23T17:07:17 CDT">
+        </test-method> <!-- fbLogin -->
+        <test-method status="PASS" signature="fbLogin(java.lang.String, java.lang.String)[pri:20, instance:com.ra.qa.general.Test2@6e6c3152]" name="fbLogin" duration-ms="16161" started-at="2019-10-15T17:56:53 CDT" data-provider="TestData" finished-at="2019-10-15T17:57:10 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ABC2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass2]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="manageAccountTest()[pri:40, instance:com.ra.qa.testcases.RAAdminLoginPageTest@ffaa6af]" name="manageAccountTest" duration-ms="6379" started-at="2019-09-23T17:07:17 CDT" finished-at="2019-09-23T17:07:23 CDT">
+        </test-method> <!-- fbLogin -->
+        <test-method status="PASS" signature="fbLogin(java.lang.String, java.lang.String)[pri:20, instance:com.ra.qa.general.Test2@6e6c3152]" name="fbLogin" duration-ms="15721" started-at="2019-10-15T17:57:10 CDT" data-provider="TestData" finished-at="2019-10-15T17:57:25 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ABC3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass3]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- manageAccountTest -->
-        <test-method status="PASS" signature="selectRAAdminAccountTest()[pri:50, instance:com.ra.qa.testcases.RAAdminLoginPageTest@ffaa6af]" name="selectRAAdminAccountTest" duration-ms="5638" started-at="2019-09-23T17:07:23 CDT" finished-at="2019-09-23T17:07:29 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectRAAdminAccountTest -->
-        <test-method status="PASS" signature="selectRAProfitCenterTest()[pri:60, instance:com.ra.qa.testcases.RAAdminLoginPageTest@ffaa6af]" name="selectRAProfitCenterTest" duration-ms="19243" started-at="2019-09-23T17:07:29 CDT" finished-at="2019-09-23T17:07:48 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectRAProfitCenterTest -->
-        <test-method status="PASS" signature="tearDown()[pri:1000, instance:com.ra.qa.testcases.RAAdminLoginPageTest@ffaa6af]" name="tearDown" duration-ms="649" started-at="2019-09-23T17:07:48 CDT" finished-at="2019-09-23T17:07:49 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.ra.qa.testcases.RAAdminLoginPageTest -->
+        </test-method> <!-- fbLogin -->
+      </class> <!-- com.ra.qa.general.Test2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

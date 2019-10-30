@@ -38,30 +38,7 @@ public class RAAdminLoginPageTest extends TestBase
 	{
 		raAdminLoginPage.login(prop.getProperty("RAAdminUserName"), prop.getProperty("RAAdminpwd"));
 	}
-	
-	@Test (priority = 40)
-	public void manageAccountTest() throws InterruptedException
-	{
-		raAdminLoginPage.manageAccount();
-	}
-	
-	@Test (priority = 50)
-	public void selectRAAdminAccountTest() throws InterruptedException
-	{
-		raAdminLoginPage.selectRAAdminAccount();
-	}
-	
-	@Test (priority = 60)
-	public void selectRAProfitCenterTest() throws InterruptedException
-	{
-		raAdminLoginPage.selectRAProfitCenter();
-	}
-	
-	@Test (priority = 70)
-	public void cutomerAccountViewTest() throws InterruptedException
-	{
-		raAdminLoginPage.cutomerAccountView();
-	}
+
 	
 	@Test(priority = 1000)
 	public void tearDown()

@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.ra.qa.util.TestUtil;
 import com.ra.qa.util.WebEventListener;
@@ -20,6 +20,7 @@ import com.ra.qa.util.WebEventListener;
 public class TestBase {
 	
 	public WebDriver driver;
+	public WebDriverWait wait;
 	public Properties prop;
 	public EventFiringWebDriver e_driver;
 	public WebEventListener eventListener;
@@ -32,7 +33,7 @@ public class TestBase {
 	{
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("C:\\Users\\mails\\ExistingProject\\RoyalAlliancesTest\\src\\main\\java\\com\\ra\\qa\\config\\config.properties");
+			FileInputStream ip = new FileInputStream("C:\\Users\\Sujan\\eclipse-workspace2\\RoyalAlliancesTest\\src\\main\\java\\com\\ra\\qa\\config\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -48,17 +49,19 @@ public class TestBase {
 		
 		if(broswerName.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\mails\\Downloads\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sujan\\Documents\\Selenium\\chromedriver_win32\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		else if (broswerName.equals("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\mails\\Downloads\\geckodriver-v0.25.0-win64\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Sujan\\Documents\\Selenium\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		
 		//adding log message
 		log.info("**************************launching browser*******************************");
+		
+		wait = new WebDriverWait(driver, 20);
 		
 		e_driver = new EventFiringWebDriver(driver);
 		

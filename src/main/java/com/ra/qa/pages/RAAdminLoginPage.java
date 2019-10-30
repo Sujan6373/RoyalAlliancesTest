@@ -24,14 +24,6 @@ public class RAAdminLoginPage extends TestBase
 	@FindBy (xpath = "//span[contains(text(),'ROYAL ALLIANCES HOME OFFICE')]/parent::p/button[@type='submit']")
 	WebElement	viewDetailsRAHomeOffice;
 	
-	//@FindBy (xpath = "//ul[@class='chosen-results']")
-	
-	@FindBy (xpath = "//div[contains(@class,'multi')]")
-	WebElement raAdminSiteSelector;
-	
-	@FindBy (xpath = "//ul[@class='chosen-results']/descendant::li[contains(text(),'RA Profit Center')]")
-	WebElement selectRAProfitCenter;
-	
 	@FindBy (xpath = "//select[contains(@class,'select')]")
 	WebElement selectRAProfitCenter2;
 	
@@ -64,37 +56,8 @@ public class RAAdminLoginPage extends TestBase
 		return new RAAdminHomePage(driver);
 	}
 	
-	public void manageAccount() throws InterruptedException
-	{
-		manageAccount.click();
-		Thread.sleep(5000);
-	}
+
 	
-	public void selectRAAdminAccount() throws InterruptedException
-	{
-		js.executeScript("window.scrollBy(0,4000)");
-		Thread.sleep(2000);
-		
-		viewDetailsRAHomeOffice.click();
-		Thread.sleep(3000);
-	}
 	
-	public void selectRAProfitCenter() throws InterruptedException
-	{
-		raAdminSiteSelector.click();
-		Thread.sleep(1000);
-		
-//		Select raProfitCenter = new Select(selectRAProfitCenter);
-//		raProfitCenter.selectByVisibleText("RA Profit Center");
-		
-		selectRAProfitCenter.click();
-		Thread.sleep(3000);
-	}
-	
-	public void cutomerAccountView() throws InterruptedException
-	{
-		cutomerAccountView.click();
-		Thread.sleep(5000);
-	}
 
 }

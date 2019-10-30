@@ -119,7 +119,15 @@ public class ShipmentRequestPage extends TestBase
 	public void process558579() throws InterruptedException
 	{
 		process558579.click();
-		Thread.sleep(120000);
+		Thread.sleep(150000);
+		//driver.navigate().refresh();
+	}
+	
+	public void processPCnLTR() throws InterruptedException
+	{
+		process558579.click();
+		Thread.sleep(200000);
+		//driver.navigate().refresh();
 	}
 	
 	public void finalizeButton558579() throws InterruptedException
